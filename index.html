@@ -3,78 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <title>Aleh Komar CV</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td><img src="logo.jpg" alt="Моя фотка" width="200px" /></td>
-        <td>
+    <div class="container">
+      <div class="info">
+        <img src="avatar.JPG" alt="Моя фотка" class="avatar" />
+
+        <div class="info-text">
           <h1>Олег Комар</h1>
-          <p>
-            <em>Я работаю на ОАО <strong>"Гродно Азот".</strong></em>
-          </p>
+          <p>Я работаю на ОАО <strong>"Гродно Азот".</strong></p>
           <p>
             Я закончил образовательные курсы по C# и ASP.net в образовательном
             центре IT-Academy
           </p>
-        </td>
-      </tr>
-    </table>
+          <h4>Мои социальные сети</h4>
+          <a href="https://instagram.com/betep_ok" target="_blanc">Instagram</a>
+          |
+          <a href="https://t.me/" target="_blanc">Telegram</a>
+        </div>
+      </div>
 
-    <hr />
-    <h2>Мои социальные сети</h2>
-    <ul>
-      <li>
-        <a href="https://instagram.com/betep_ok" target="_blanc"
-          >https://instagram.com/betep_ok</a
-        >
-      </li>
-      <li><a href="https://t.me/" target="_blanc">https://t.me/</a></li>
-    </ul>
-    <hr />
-    <h2>Мои хобби</h2>
-    <ol>
-      <li>Технологии</li>
-      <li>Спорт: н/теннис, футбол, марафонский бег</li>
-      <li>Автомобили</li>
-      <li>Рыбалка</li>
-      <li>Путешествия</li>
-    </ol>
-    <hr />
-    <h2>Опыт работы</h2>
-    <table>
-      <tr>
-        <th>Компания</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-      <tr>
-        <td>JSC "Grodno Azot"</td>
-        <td>Software Engineer</td>
-        <td>2010 - 2022</td>
-      </tr>
-      <tr>
-        <td>GOU TER</td>
-        <td>chief thermal engineer</td>
-        <td>2007-2010</td>
-      </tr>
-    </table>
-    <hr />
-    <h2>Papafish.by</h2>
-    <a href="pf.html">Посмотреть список</a>
-    <hr />
-    <h2>Связаться со мной</h2>
-    <form action="/">
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="Введите имя" />
-      <br />
-      <label for="email">Ваше e-mail:</label>
-      <input type="email" id="email" placeholder="Введите email" />
-      <br />
-      <label for="text">Ваше сообщение:</label>
-      <textarea id="text" cols="21" rows="2"></textarea>
-      <br />
-      <input type="submit" value="Связаться" />
-    </form>
+      <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+          <li>Технологии</li>
+          <li>Спорт: н/теннис, футбол, марафонский бег</li>
+          <li>Автомобили</li>
+          <li>Рыбалка</li>
+          <li>Путешествия</li>
+        </ol>
+      </div>
+      <div class="card bg-green">
+        <h2>Опыт работы</h2>
+        <table class="table">
+          <tr>
+            <td>JSC "Grodno Azot"</td>
+            <td>Software Engineer</td>
+            <td>2010 - now</td>
+          </tr>
+          <tr>
+            <td>GOU TER</td>
+            <td>chief thermal engineer</td>
+            <td>2007 - 2010</td>
+          </tr>
+        </table>
+      </div>
+      <div class="card bg-red">
+        <h2>Сертификаты</h2>
+        <ul class="link-list">
+          <li>
+            <a
+              href="https://media-exp1.licdn.com/dms/image/C562DAQEj9SsoloOREQ/profile-treasury-document-cover-images_480/0/1623329653855?e=1633006800&v=beta&t=TAd887kGpdSiRgSPYeU53rN620jpVqdJsCviNcIGFsg"
+              target="_blanc"
+            >
+              C# It-Academy</a
+            >
+          </li>
+          <li>ASP.Net It-Academy</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h2>Связаться со мной</h2>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Введите имя" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Ваше email:</label>
+              <input type="email" id="email" placeholder="Введите email" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="text">Ваше сообщение:</label>
+            <textarea id="text" cols="21" rows="2"></textarea>
+          </div>
+
+          <input class="btn" type="submit" value="Связаться" />
+        </form>
+      </div>
+      <div class="position">
+        <div class="box"></div>
+      </div>
+    </div>
   </body>
 </html>
